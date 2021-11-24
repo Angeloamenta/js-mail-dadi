@@ -6,12 +6,13 @@ const button = document.getElementById("button");
 
 button.addEventListener("click", function(){
     let randNumberOne = Math.floor(Math.random() * 6)+1;
-    console.log (randNumberOne)
+    console.log (randNumberOne);
 
     let randNumberTwo = Math.floor(Math.random() * 6)+1;
-    console.log (randNumberTwo)
+    console.log (randNumberTwo);
 
     const winner = document.getElementById("risultato");
+      
 
     if (randNumberOne > randNumberTwo) {
         winner.append(randNumberOne," - ", randNumberTwo," - ", " Player win");
@@ -19,6 +20,6 @@ button.addEventListener("click", function(){
     }else if (randNumberOne < randNumberTwo) {
         winner.append(randNumberOne," - ", randNumberTwo," - "," Pc win");
     }else {
-        winner.append("Pair")
+        winner.append("Pair");
     }
 }); 
