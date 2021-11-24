@@ -25,9 +25,9 @@ button.addEventListener("click", function() {
     }
     
     if (emailOk == true ) {
-        result.append("benvenuto " + emailUser);
+        result.innerHTML =`benvenuto ${emailUser}`;
     } else {
-        result.append("spiacente " + emailUser + " non sei registrato");
+        result.innerHTML =`spiacente ${emailUser} non sei registrato`;
     }
 
 }); 
