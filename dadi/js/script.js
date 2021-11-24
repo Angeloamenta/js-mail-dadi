@@ -15,11 +15,11 @@ button.addEventListener("click", function(){
       
 
     if (randNumberOne > randNumberTwo) {
-        winner.append(randNumberOne," - ", randNumberTwo," - ", " Player win");
+        winner.innerHTML = `${randNumberOne} - ${randNumberTwo} - Player Win`
 
     }else if (randNumberOne < randNumberTwo) {
-        winner.append(randNumberOne," - ", randNumberTwo," - "," Pc win");
+        winner.innerHTML = `${randNumberOne} - ${randNumberTwo} - Pc Win`
     }else {
-        winner.append("Pair");
+        winner.innerHTML= ("Pair");
     }
 }); 
