@@ -13,14 +13,14 @@ const result = document.getElementById("risultato");
 
 
 button.addEventListener("click", function() { 
-    let emailOk = false
+    let emailOk = false;
     let emailUser = document.getElementById("email-user").value;   
     for (let i = 0; i < emailList.length; i ++) {
     
         const element = emailList[i];
     
         if (emailUser == element) {
-            emailOk = true
+            emailOk = true;
         }
     }
     
@@ -30,6 +30,5 @@ button.addEventListener("click", function() {
         result.append("spiacente " + emailUser + " non sei registrato");
     }
 
-    
 }); 
 
