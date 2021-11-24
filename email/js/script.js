@@ -29,5 +29,6 @@ button.addEventListener("click", function() {
         console.log ("spiacente " + emailUser + " non sei registrato");
     }
 
+    emailUser= "";
 }); 
 
