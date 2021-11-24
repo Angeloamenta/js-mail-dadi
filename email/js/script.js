@@ -9,11 +9,12 @@ const emailList = ["angelo@gmail.com", "pippo@gmail.com", "mario@gmail.com"];
 // let emailUser = document.getElementById("email-user");
 let button = document.getElementById("button");
 
+const result = document.getElementById("risultato");
+
 
 button.addEventListener("click", function() { 
     let emailOk = false
-    let emailUser = document.getElementById("email-user").value;
-    
+    let emailUser = document.getElementById("email-user").value;   
     for (let i = 0; i < emailList.length; i ++) {
     
         const element = emailList[i];
@@ -24,11 +25,11 @@ button.addEventListener("click", function() {
     }
     
     if (emailOk == true ) {
-        console.log("benvenuto " + emailUser);
+        result.append("benvenuto " + emailUser);
     } else {
-        console.log ("spiacente " + emailUser + " non sei registrato");
+        result.append("spiacente " + emailUser + " non sei registrato");
     }
 
-    emailUser= "";
+    
 }); 
 
