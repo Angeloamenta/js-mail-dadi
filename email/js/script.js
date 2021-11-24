@@ -4,9 +4,17 @@
 // stampa un messaggio appropriato sull’esito del controllo.
 
 const emailList = ["angelo@gmail.com", "pippo@gmail.com", "mario@gmail.com"];
-let emailUser = prompt("inserisci la tua email");
+// let emailUser = prompt("inserisci la tua email");
+
+let emailUser = document.getElementById("email-user");
+let button = document.getElementById("button");
 console.log (emailUser);
 let emailOk = false
+
+button.addEventListener("click", function(){ 
+    alert("Hello World!"); 
+}); 
+
 for (let i = 0; i < emailList.length; i ++) {
     
     const element = emailList[i];
