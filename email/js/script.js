@@ -6,14 +6,14 @@
 const emailList = ["angelo@gmail.com", "pippo@gmail.com", "mario@gmail.com"];
 // let emailUser = prompt("inserisci la tua email");
 
-let emailUser = document.getElementById("email-user");
+// let emailUser = document.getElementById("email-user");
 let button = document.getElementById("button");
-console.log (emailUser);
 let emailOk = false
 
 button.addEventListener("click", function() { 
 
-    let emailUser = document.getElementById("email-user").innerText;
+    let emailUser = document.getElementById("email-user").value;
+    
     for (let i = 0; i < emailList.length; i ++) {
     
         const element = emailList[i];
@@ -25,7 +25,6 @@ button.addEventListener("click", function() {
     
     if (emailOk == true ) {
         console.log("benvenuto " + emailUser);
-        
     } else {
         console.log ("spiacente " + emailUser + " non sei registrato");
     }
