@@ -20,6 +20,6 @@ button.addEventListener("click", function(){
     }else if (randNumberOne < randNumberTwo) {
         winner.innerHTML = `${randNumberOne} - ${randNumberTwo} - Pc Win`
     }else {
-        winner.innerHTML= ("Pair");
+        winner.innerHTML= ("Draw");
     }
 }); 

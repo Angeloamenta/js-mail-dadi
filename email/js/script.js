@@ -14,7 +14,8 @@ const result = document.getElementById("risultato");
 
 button.addEventListener("click", function() { 
     let emailOk = false;
-    let emailUser = document.getElementById("email-user").value;   
+    let emailUser = document.getElementById("email-user").value;
+    
     for (let i = 0; i < emailList.length; i ++) {
     
         const element = emailList[i];
@@ -29,6 +30,5 @@ button.addEventListener("click", function() {
     } else {
         result.innerHTML =`spiacente ${emailUser} non sei registrato`;
     }
-
+    emailUser = document.getElementById("email-user").value = "";
 }); 
-
