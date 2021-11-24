@@ -11,21 +11,24 @@ let button = document.getElementById("button");
 console.log (emailUser);
 let emailOk = false
 
-button.addEventListener("click", function(){ 
-    alert("Hello World!"); 
+button.addEventListener("click", function() { 
+
+    let emailUser = document.getElementById("email-user").innerText;
+    for (let i = 0; i < emailList.length; i ++) {
+    
+        const element = emailList[i];
+    
+        if (emailUser == element) {
+            emailOk = true
+        }
+    }
+    
+    if (emailOk == true ) {
+        console.log("benvenuto " + emailUser);
+        
+    } else {
+        console.log ("spiacente " + emailUser + " non sei registrato");
+    }
+
 }); 
 
-for (let i = 0; i < emailList.length; i ++) {
-    
-    const element = emailList[i];
-
-    if (emailUser == element) {
-        emailOk = true
-    }
-}
-
-if (emailOk == true ) {
-    console.log("benvenuto " + emailUser);
-} else {
-    console.log ("spiacente " + emailUser + " non sei registrato");
-}
