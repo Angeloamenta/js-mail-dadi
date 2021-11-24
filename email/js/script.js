@@ -8,10 +8,10 @@ const emailList = ["angelo@gmail.com", "pippo@gmail.com", "mario@gmail.com"];
 
 // let emailUser = document.getElementById("email-user");
 let button = document.getElementById("button");
-let emailOk = false
+
 
 button.addEventListener("click", function() { 
-
+    let emailOk = false
     let emailUser = document.getElementById("email-user").value;
     
     for (let i = 0; i < emailList.length; i ++) {
